@@ -26,3 +26,8 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
+
+    - name: Test Secrets
+      run: |
+        echo "My Existing secret is ${{secrets.API_KEY}}"
+        echo "My Existing variable is ${{variable.API_VAR}}"
