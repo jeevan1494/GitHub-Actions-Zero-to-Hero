@@ -30,4 +30,3 @@ jobs:
     - name: Test Secrets
       run: |
         echo "My Existing secret is ${{secrets.API_KEY}}"
-        echo "My Existing variable is ${{vars.API_VAR}}"
